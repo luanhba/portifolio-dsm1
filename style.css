@@ -39,8 +39,8 @@ nav a:hover, nav a:focus-visible, .link-projeto:hover { color: #8fc9a4; }
   margin: 0 0 14px;
   border: 1px solid #526b59;
   border-radius: 4px;
-  object-fit: cover;
-  object-position: center 35%;
+  object-fit: contain;
+  object-position: center;
 }
 .texto-apresentacao { grid-column: 1; grid-row: 1; }
 .contatos-perfil { display: grid; justify-items: center; gap: 10px; }
@@ -113,11 +113,11 @@ footer p { margin: 0; }
   display: block;
   width: min(100%, 200px);
   height: auto;
+  margin: 16px 0;
   border-radius: 4px;
-  object-fit: cover;
+  object-fit: contain;
 }
-.imagem-projeto { margin: 16px 0; }
-.imagem-grafico { margin: 16px auto 24px; }
+.imagem-grafico { margin-right: auto; margin-left: auto; margin-bottom: 24px; }
 .galeria-projeto {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -127,9 +127,10 @@ footer p { margin: 0; }
 .galeria-projeto img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: auto;
+  max-height: none;
   border-radius: 4px;
-  object-fit: cover;
+  object-fit: contain;
 }
 @media (max-width: 700px) {
   .galeria-projeto {
