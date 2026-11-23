@@ -47,8 +47,8 @@ nav a:hover, nav a:focus-visible, .link-projeto:hover { color: #8fc9a4; }
   margin: 0 0 14px;
   border: 1px solid #526b59;
   border-radius: 2px;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: center 20%;
 }
 .texto-apresentacao { grid-column: 1; grid-row: 1; min-width: 0; }
 .contatos-perfil { display: grid; justify-items: center; gap: 10px; }
