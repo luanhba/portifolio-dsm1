@@ -110,7 +110,7 @@ footer p { margin: 0; }
 }
 .imagem-projeto {
   display: block;
-  width: 100%;
+  width: 50%;
   max-width: 200px;
   margin: 16px 0;
   border-radius: 4px;
@@ -118,8 +118,8 @@ footer p { margin: 0; }
 }
 .imagem-grafico {
   display: block;
-  width: 100%;
-  max-width: 760px;
+  width: 50%;
+  max-width: 200px;
   height: auto;
   margin: 16px auto 24px;
   border-radius: 4px;
