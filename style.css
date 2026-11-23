@@ -101,16 +101,26 @@ li + li { margin-top: 10px; }
 footer { padding: 20px 24px; color: #a0b7a8; font-size: .85rem; text-align: center; }
 footer p { margin: 0; }
 
-.imagem-projeto,
-.imagem-grafico {
+/* Tamanhos das imagens dos projetos */
+.imagem-projeto {
   display: block;
+  width: 240px;
   height: auto;
-  margin: 16px auto;
+  margin: 16px 0;
   border-radius: 4px;
   object-fit: contain;
 }
-.imagem-projeto { width: min(100%, 200px); }
-.imagem-grafico { width: min(100%, 320px); margin-bottom: 24px; }
+
+.imagem-grafico {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 16px auto 24px;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
 .galeria-projeto {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -118,12 +128,12 @@ footer p { margin: 0; }
   gap: 16px;
   margin: 16px 0;
 }
+
 .galeria-projeto img {
   display: block;
   width: 100%;
-  max-width: 360px;
+  max-width: 100%;
   height: auto;
-  justify-self: center;
   border-radius: 4px;
   object-fit: contain;
 }
@@ -143,6 +153,7 @@ footer p { margin: 0; }
   .duas-colunas, .blocos-projeto { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .duas-colunas > div + div { padding: 24px 0 0; border-top: 1px solid #2b3d32; border-left: 0; }
   .galeria-projeto { grid-template-columns: minmax(0, 1fr); }
+  .imagem-projeto { width: min(100%, 240px); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
