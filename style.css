@@ -104,7 +104,7 @@ footer p { margin: 0; }
 .imagem-projeto,
 .imagem-grafico {
   display: block;
-  width: min(100%, 200px);
+  width: 200px
   height: auto;
   margin: 16px 0;
   border-radius: 4px;
